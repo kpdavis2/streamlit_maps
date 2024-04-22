@@ -57,7 +57,7 @@ group = st.sidebar.selectbox(
 st.write('You selected:', group)
 
 #Naming Map
-st.header('US States & Their Parties')
+st.header('US States & Their Affiliated Parties')
 
 # merge dataframe and geopandas dataframe
 gdf = my_USA_map.merge(state_party_counts, on='NAME')
