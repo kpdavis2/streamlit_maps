@@ -48,6 +48,14 @@ my_USA_map = my_USA_map.drop(38)
 my_USA_map = my_USA_map.drop(44)
 my_USA_map = my_USA_map.drop(13)
 
+#Select a party group
+st.sidebar.title("Select Party Group: ")
+group = st.sidebar.selectbox(
+    'Party Group',
+    ('Democratic Party', 'Republican Party', 'Third Party'))
+
+st.write('You selected:', group)
+
 #Naming Map
 st.header('US States & Their Parties')
 
