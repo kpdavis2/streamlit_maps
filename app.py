@@ -48,6 +48,9 @@ my_USA_map = my_USA_map.drop(38)
 my_USA_map = my_USA_map.drop(44)
 my_USA_map = my_USA_map.drop(13)
 
+#Naming Map
+st.header('US States & Their Parties')
+
 # merge dataframe and geopandas dataframe
 gdf = my_USA_map.merge(state_party_counts, on='NAME')
 
