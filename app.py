@@ -4,7 +4,7 @@ import geopandas as gpd
 import folium
 from streamlit_folium import folium_static
 
-# load data 
+# load in data 
 def load_data(csv):
     df = pd.read_csv(csv)
     return df
